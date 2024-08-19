@@ -22,7 +22,7 @@ pub mod escrow {
         token_b_wanted_amount: u64,
     ) -> Result<()> {
         instructions::make_offer::send_offered_tokens_to_vault(&context, 
-token_a_offered_amount)?;
+token_a_offered_ammount)?;
         instructions::make_offer::save_offer(context, id, token_b_wanted_amount)
     }
 
